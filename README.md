@@ -8,6 +8,12 @@ John Horton<br />
 \<PACKT\> BIRMINGHAM - MUMBAI
 
 # Navigate
+## map
+    git add .
+    git commit -m 'message to commit'
+	git tag Chap5
+	git push origin master --tags
+	git log --all --decorate --oneline --graph
 ## log
     git log --all --decorate --oneline --graph
 
