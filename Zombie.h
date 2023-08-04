@@ -29,17 +29,16 @@ private:
 	// How fast can this one run/crawl?
 	float m_Speed;
 
-	// How much health has it got? nbre de vie
+	// How much health has it got?
 	float m_Health;
 
-	// Is it still alive? en vie?
+	// Is it still alive?
 	bool m_Alive;
 
 	// Public prototypes go here	
 public:
 
 	// Handle when a bullet hits a zombie
-	// Gérer lorsqu'une balle touche un zombie
 	bool hit();
 
 	// Find out if the zombie is alive

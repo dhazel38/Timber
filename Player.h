@@ -46,13 +46,13 @@ private:
 	float m_Speed;
 
 
-// All our public functions will come next
+	// All our public functions will come next
 public:
 
 	Player();
 
 	void spawn(IntRect arena, Vector2f resolution, int tileSize);
-	
+
 	// Handle the player getting hit by a zombie
 	bool hit(Time timeHit);
 
@@ -104,8 +104,9 @@ public:
 	// Increase the maximum amount of health the player can have
 	void increaseHealthLevel(int amount);
 
-	
+
 };
 
 
 
+#pragma once

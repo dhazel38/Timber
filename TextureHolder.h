@@ -5,21 +5,11 @@
 #include <SFML/Graphics.hpp>
 #include <map>
 
-using namespace sf;
-
-/*
-* ajout ifndef sur un singleton
-*/
-
-// support de texture
 class TextureHolder
 {
 public:
 	TextureHolder();
-	// returns a reference to a Texture. 
-	// a string as a constant reference, as a parameter. La référence est
-	// constante, elle ne peut pas être modifiée.
-	static Texture& GetTexture(std::string const& filename);
+	static sf::Texture& GetTexture(std::string const& filename);
 
 private:
 	// A map container from the STL,

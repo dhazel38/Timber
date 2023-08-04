@@ -13,7 +13,6 @@ private:
 	RectangleShape m_BulletShape;
 
 	// Is this bullet currently whizzing through the air
-	// Cette balle siffle-t-elle actuellement dans les airs?
 	bool m_InFlight = false;
 
 	// How fast does a bullet travel?
@@ -30,7 +29,6 @@ private:
 	float m_YTarget;
 
 	// Some boundaries so the bullet doesn't fly forever
-	// Quelques limites pour que la balle ne vole pas éternellement
 	float m_MaxX;
 	float m_MinX;
 	float m_MaxY;
@@ -48,7 +46,6 @@ public:
 	bool isInFlight();
 
 	// Launch a new bullet
-	// Lancer une nouvelle balle
 	void shoot(float startX, float startY,
 		float xTarget, float yTarget);
 

@@ -1,9 +1,6 @@
 #include "ZombieArena.h"
 #include "Zombie.h"
 
-
-/* p289
-*/
 Zombie* createHorde(int numZombies, IntRect arena)
 {
 	Zombie* zombies = new Zombie[numZombies];

@@ -4,17 +4,11 @@
 using namespace sf;
 using namespace std;
 
-// we initialize our pointer of the class TextureHolder type to nullptr
 TextureHolder* TextureHolder::m_s_Instance = nullptr;
 
-// constructeur: ensures that m_s_Instance equals nullptr. sinon quitte le constructeur (assert)
 TextureHolder::TextureHolder()
 {
 	assert(m_s_Instance == nullptr);
-	// assigns the pointer to this instance. le pointeur pointe l'objet instancié.
-	// Donc, effectivement, nous avons maintenant un pointeur vers un
-	// TextureHolder qui pointe vers la seule et unique instance de lui - même.
-	// this is A singleton that is a design pattern
 	m_s_Instance = this;
 }
 
